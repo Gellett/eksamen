@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    font-family: Roboto;
+}
+
+body{
+    background-color: rgba(122,243,246,0.2);
+}
+
+/* -------------- HEADER -------------- */
+
+#background_image{
+    width: 100%;
+}
+
+#background_image_ipad, #logo{
+    display: none;
+}
+
+#background_image_pc{
+    display: none;
+}
+
+nav{
+    display: none;
+}
+
+#mobil_nav{
+    display: none;
+    position: absolute;
+    top: 68px;
+    width: 100%;
+    background-color: grey;
+}
+
+#mobil_nav li{
+    list-style-type: none;
+    line-height: 35px;
+}
+
+#mobil_nav a{
+    color: rgba(122,243,246, 0.8);
+    text-decoration: none;
+}
+
+#burger_icon{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#text{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80%;
+}
+
+#text h1{
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+#text p{
+    font-size: 14px;
+}
+
+/* -------------- MAIN -------------- */
+
+.product_section h2{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.product_spec{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.produkt_img, .product_text{
+    display: inline-block;
+}
+
+.produkt_img{
+    width: 23%;
+    max-height: 150px;
+}
+
+.product_text{
+    position: relative;
+    bottom: 10px;
+    width: 72%;
+    padding-left: 10px;
+}
+
+.product_text h3{
+    font-size: 16px;
+}
+
+.product_text p{
+    font-size: 12px;
+}
+/* -------------- FOOTER -------------- */
+
+footer{
+    background-color: rgb(64,104,102);
+    color: white;
+    padding: 30px;
+}
+
+footer p{
+    font-size: 12px;
+}
+
+.footer_section{
+    width: 49%;
+    display: inline-block;
+}
+
+#left_side h3{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#nummer{
+    margin-bottom: 15px;
+}
+
+#nummer img, #nummer p{
+    display: inline-block;
+}
+
+#nummer p{
+    position: relative;
+    bottom: 18px;
+    transform: translate(0,0%);
+}
+
+.ikon{
+    width: 35px;
+}
+
+#icons{
+    display: none;
+}
+
+#nummer #cvr_pc{
+    display: none;
+}
+
+/* ------------------------------------ */
+/* --------------- Ipad --------------- */
+/* ------------------------------------ */
+
+@media screen and (min-width: 700px) {
+
+    /* -------------- HEADER -------------- */
+
+    #background_image{
+        display: none;
+    }
+
+    #background_image_ipad{
+        display: block;
+        width: 100%;
+    }
+
+    #logo{
+        display: block;
+        position: absolute;
+        left: 5%;
+        width: 100px;
+        top: 20px;
+    }
+
+    #text{
+        width: 60%;
+        font-size: 17px;
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+
+    /* -------------- MAIN -------------- */
+
+    .product_section{
+        width: 80%;
+        margin: auto;
+    }
+
+    .product_section h2{
+        width: 80%;
+        font-size: 22px;
+        margin: auto;
+        -webkit-box-shadow: 2px 2px 3px 0px rgba(120,120,120,0.54);
+        -moz-box-shadow: 2px 2px 3px 0px rgba(120,120,120,0.54);
+        box-shadow: 2px 2px 3px 0px rgba(120,120,120,0.54);
+    }
+
+    .product_row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .product_spec{
+        width: 45%;
+        display: inline-block;
+    }
+
+    .produkt_img{
+        width: unset;
+        max-width: 30%;
+        height: 150px;
+    }
+
+    .product_text{
+        width: 60%;
+    }
+
+
+    /* -------------- FOOTER -------------- */
+
+    footer p{
+        font-size: 14px;
+    }
+
+    .footer_section{
+        width: 40%;
+        position: relative;
+        left: 10%;
+    }
+
+    .ikon{
+        width: 40px;
+    }
+}
+
+/* ------------------------------------ */
+/* ------------- Computer ------------- */
+/* ------------------------------------ */
+
+@media screen and (min-width: 1024px) {
+
+    /* -------------- HEADER -------------- */
+
+    #background_image_ipad{
+        display: none;
+    }
+
+    #background_image_pc{
+        display: block;
+        width: 100%;
+        height: 50vh;
+    }
+
+    #logo{
+        left: 10%;
+        transform: unset;
+    }
+
+    #burger_icon{
+        display: none;
+    }
+
+    nav{
+        display: block;
+        width: 400px;
+        position: absolute;
+        top: 30px;
+        right: 10%;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav li{
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    nav a{
+        color: white;
+        text-decoration: none;
+    }
+
+
+    #text{
+        width: 35%;
+        left: 10%;
+        transform: unset;
+        font-size: 17px;
+    }
+
+    #text h1{
+        font-size: 30px;
+    }
+
+    /* -------------- MAIN -------------- */
+
+    .product_section h2{
+        font-size: 26px;
+    }
+
+    .product_spec{
+        text-align: center;
+    }
+
+    .product_spec p, .product_spec h3{
+        text-align: left;
+    }
+
+    /* -------------- FOOTER -------------- */
+
+    footer{
+        margin-top: 50px;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+
+    .footer_section{
+        width: 29%;
+        position: relative;
+        left: 10%;
+    }
+
+    .footer_section h3, #cvr{
+        display: none;
+    }
+
+    #right_side{
+        left: 15%;
+    }
+
+    #nummer img{
+        display: none;
+    }
+
+    #nummer p{
+        display: block;
+    }
+
+    .ikon{
+        display: none;
+    }
+
+    #icons{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .ikon_pc{
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    #nummer #cvr_pc{
+        display: block;
+    }
+}

@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    font-family: Roboto;
+}
+
+body{
+    background-color: rgba(122,243,246,0.2);
+}
+
+/* -------------- HEADER -------------- */
+
+header{
+    position: relative;
+    width: 100%;
+}
+
+#forside_baggrund{
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+#background_image{
+    width: 100%;
+}
+
+#background_image_pc{
+    display: none;
+}
+
+#overlay{
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(116,147,145,0.7),rgba(80,190,157,0.7));
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    display: none;
+}
+
+#mobil_nav{
+    display: none;
+    position: absolute;
+    top: 68px;
+    width: 100%;
+    background-color: grey;
+}
+
+#mobil_nav li{
+    list-style-type: none;
+    line-height: 35px;
+}
+
+#mobil_nav a{
+    color: rgba(122,243,246, 0.8);
+    text-decoration: none;
+}
+
+#burger_icon{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#logo{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+    top: 20px;
+}
+
+#anja{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 200px;
+}
+
+#navn{
+    display: none;
+}
+
+
+#forside_text{
+    width: 80%;
+    position: absolute;
+    top: 380px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-size: 14px;
+}
+
+header h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+#arrow_down{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10px;
+    padding-bottom: 15px;
+}
+
+/* -------------- MAIN -------------- */
+
+.main_section{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.main_section img{
+    width: 100%;
+    border-radius: 5px;
+
+-webkit-box-shadow: 2px 2px 3px 0px rgba(120,120,120,0.54);
+-moz-box-shadow: 2px 2px 3px 0px rgba(120,120,120,0.54);
+box-shadow: 2px 2px 3px 0px rgba(120,120,120,0.54);
+}
+
+.main_section_text{
+    position: relative;
+    bottom: 70px;
+    background-color: white;
+    border-radius: 5px;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    font-size: 12px;
+    hyphens: auto;
+
+-webkit-box-shadow: 2px 2px 3px 0px rgba(120,120,120,0.54);
+-moz-box-shadow: 2px 2px 3px 0px rgba(120,120,120,0.54);
+box-shadow: 2px 2px 3px 0px rgba(120,120,120,0.54);
+}
+
+.main_section h2{
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+/* -------------- FOOTER -------------- */
+
+footer{
+    background-color: rgb(64,104,102);
+    color: white;
+    padding: 30px;
+}
+
+footer p{
+    font-size: 12px;
+}
+
+.footer_section{
+    width: 49%;
+    display: inline-block;
+}
+
+#left_side h3{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#nummer{
+    margin-bottom: 15px;
+}
+
+#nummer img, #nummer p{
+    display: inline-block;
+}
+
+#nummer p{
+    position: relative;
+    bottom: 18px;
+    transform: translate(0,0%);
+}
+
+.ikon{
+    width: 35px;
+}
+
+#icons{
+    display: none;
+}
+
+#nummer #cvr_pc{
+    display: none;
+}
+
+/* ------------------------------------ */
+/* --------------- Ipad --------------- */
+/* ------------------------------------ */
+
+@media screen and (min-width: 700px) {
+
+    /* -------------- HEADER -------------- */
+
+    #forside_baggrund{
+        height: 94vh;
+    }
+
+    #background_image{
+        height: 100%;
+    }
+
+    #logo{
+        left: 5%;
+        transform: unset;
+    }
+
+    #anja{
+        top: 350px;
+        width: 200px;
+        left: 60%;
+        transform: unset;
+    }
+
+    #navn{
+        display: block;
+        position: absolute;
+        top: 550px;
+        left: 62%;
+        color: white;
+        font-size: 26px;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    #forside_text{
+        width: 40%;
+        left: 10%;
+        transform: unset;
+        font-size: 17px;
+    }
+
+    /* -------------- MAIN -------------- */
+
+    .main_section img{
+        height: 300px;
+    }
+
+    .main_section h2{
+        font-size: 24px;
+    }
+
+    /* -------------- FOOTER -------------- */
+
+    footer p{
+        font-size: 14px;
+    }
+
+    .footer_section{
+        width: 40%;
+        position: relative;
+        left: 10%;
+    }
+
+    .ikon{
+        width: 40px;
+    }
+
+    #icons{
+        display: none;
+    }
+}
+
+/* ------------------------------------ */
+/* ------------- Computer ------------- */
+/* ------------------------------------ */
+
+@media screen and (min-width: 1024px) {
+
+    /* -------------- HEADER -------------- */
+
+    #forside_baggrund{
+        height: 94vh;
+    }
+
+    #background_image{
+        display: none;
+    }
+
+    #background_image_pc{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    #logo{
+        left: 10%;
+        transform: unset;
+    }
+
+    #burger_icon{
+        display: none;
+    }
+
+    nav{
+        display: block;
+        width: 400px;
+        position: absolute;
+        top: 30px;
+        right: 10%;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav li{
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    nav a{
+        color: white;
+        text-decoration: none;
+    }
+
+
+    #forside_text{
+        width: 35%;
+        left: 10%;
+        transform: unset;
+        font-size: 17px;
+    }
+
+    #forside_text h1{
+        font-size: 70px;
+    }
+
+    /* -------------- MAIN -------------- */
+
+    .main_section{
+        margin-top: 100px;
+        width: 39%;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: inline-block;
+    }
+
+    .main_section img{
+        height: 400px;
+    }
+
+    .main_section h2{
+        font-size: 26px;
+    }
+
+    #produkter{
+        position: relative;
+        left: 15%;
+    }
+
+    #produkter .main_section_text{
+        position: relative;
+        transform: translate(60%);
+    }
+
+    /* -------------- FOOTER -------------- */
+
+    footer{
+        margin-top: 50px;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+
+    .footer_section{
+        width: 29%;
+        position: relative;
+        left: 10%;
+    }
+
+    .footer_section h3, #cvr{
+        display: none;
+    }
+
+    #right_side{
+        left: 15%;
+    }
+
+    #nummer img{
+        display: none;
+    }
+
+    #nummer p{
+        display: block;
+    }
+
+    .ikon{
+        display: none;
+    }
+
+    #icons{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .ikon_pc{
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    #nummer #cvr_pc{
+        display: block;
+    }
+}
