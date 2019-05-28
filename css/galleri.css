@@ -9,8 +9,10 @@ body{
 
 /* -------------- HEADER -------------- */
 
+
 #background_image{
     width: 100%;
+    height: 130px;
 }
 
 #background_image_ipad, #logo{
@@ -25,22 +27,43 @@ nav{
     display: none;
 }
 
+#triangle{
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid rgba(69,99,99,0.95);
+    border-left: 15px solid transparent;
+    right: 5%;
+    top: -20px;
+}
+
 #mobil_nav{
     display: none;
     position: absolute;
-    top: 68px;
-    width: 100%;
-    background-color: grey;
+    top: 88px;
+    width: 95%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 5px;
+    background-color: rgba(69,99,99,0.95);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 2;
 }
 
 #mobil_nav li{
     list-style-type: none;
-    line-height: 35px;
+    line-height: 40px;
 }
 
 #mobil_nav a{
-    color: rgba(122,243,246, 0.8);
+    color: white;
     text-decoration: none;
+}
+
+#mobil_nav #nav_loc{
+    color: #FECCCC;
 }
 
 #burger_icon{
@@ -82,7 +105,7 @@ nav{
 .slider{
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 310px;
     margin: auto;
     margin-bottom: 50px;
 }
@@ -91,6 +114,7 @@ nav{
     position: absolute;
     top: 50%;
     transform: translate(0,-50%);
+    background-color: rgba(0,0,0,0.2);
 }
 
 .right_arrow{
@@ -98,6 +122,19 @@ nav{
     top: 50%;
     right: 0;
     transform: translate(0,-50%) rotate(180deg);
+    background-color: rgba(0,0,0,0.2);
+}
+
+#left_arrow_2, #right_arrow_2{
+    top: 40%;
+}
+
+#left_arrow_2{
+    left: -20px;
+}
+
+#right_arrow_2{
+    right: -20px;
 }
 
 .image_selected{
@@ -106,14 +143,24 @@ nav{
     justify-content: space-between;
     margin: auto;
     position: relative;
-    bottom: 70px;
+    bottom: 85px;
 }
 
-.image_selecter{
+.image_selected2{
+    display: flex;
+    width: 60px;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+    bottom: 97px;
+}
+
+.image_selecter, .image_selecter2{
     width: 10px;
     height: 10px;
-    border-radius: 5px;
+    border-radius: 6px;
     background-color: white;
+    border: 1px solid grey;
 }
 
 #image_selecter_1, #image_selecter_5{
@@ -122,10 +169,16 @@ nav{
 
 #slider1{
     background-image: url("../images/klinik1.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #slider2{
-    background-image: url("../images/slider2_img.png");
+    background-image: url("../images/fake_review_1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 150px;
 }
 
 /* -------------- FOOTER -------------- */
@@ -220,7 +273,7 @@ footer p{
     }
 
     .slider{
-        height: 400px;
+        height: 600px;
         margin-top: 50px;
         margin-bottom: 90px;
         background-repeat: no-repeat;
@@ -228,7 +281,21 @@ footer p{
     }
 
     .image_selected{
-        bottom: 110px;
+        bottom: 130px;
+    }
+
+    .image_selected2{
+        bottom: 172px;
+    }
+
+    #left_arrow_2{
+        top: 40%;
+        left: -10px;
+    }
+
+    #right_arrow_2{
+        top: 40%;
+        right: -10px;
     }
 
     #slider1{
@@ -236,7 +303,8 @@ footer p{
 }
 
     #slider2{
-        background-image: url("../images/slider2_img.png");
+        background-image: url("../images/fake_review_1.png");
+        height: 300px;
     }
 
 
@@ -286,7 +354,7 @@ footer p{
 
     nav{
         display: block;
-        width: 400px;
+        width: 600px;
         position: absolute;
         top: 30px;
         right: 10%;
@@ -327,10 +395,29 @@ footer p{
 
     .slider{
         background-position: center;
-        height: 600px;
+        height: 800px;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #slider1{
+        background-size: cover;
+    }
+
+    #slider2{
+        height: 400px;
+        width: 80%;
+    }
+
+    #left_arrow_2{
+        top: 50%;
+        left: 0;
+    }
+
+    #right_arrow_2{
+        top: 50%;
+        right: 0;
     }
 
     /* -------------- FOOTER -------------- */

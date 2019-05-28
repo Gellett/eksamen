@@ -21,13 +21,14 @@
     <header>
         <div id="forside_baggrund">
             <img id="background_image" src="../images/forside_baggrund.png" alt="Forside_baggrundsbillede">
-            <img id="background_image_pc" src="../images/forside_pc.png" alt="Forside_baggrundsbillede">
+            <img id="background_image_pc" src="../images/nail_polish_holding.jpg" alt="Forside_baggrundsbillede">
 
             <div id="overlay"></div>
         </div>
 
         <nav>
             <ul>
+                <li><a href="index.html"><h3>Forside</h3></a></li>
                 <li><a href="behandlinger.html">Behandlinger</a></li>
                 <li><a href="produkter.html">Produkter</a></li>
                 <li><a href="galleri.html">Galleri</a></li>
@@ -37,9 +38,15 @@
 
 
         <img id="burger_icon" src="../images/burger_menu.png" alt="Burger_menu_ikon">
-        <img id="logo" src="../images/logo.png" alt="Logo">
-        <img id="anja" src="../images/Anja.png" alt="Anja">
-        <p id="navn">Anja Agerskov</p>
+        <a href="index.html"><img id="logo" src="../images/logo.png" alt="Logo"></a>
+
+
+        <a href="om_os.html">
+            <img id="anja" src="../images/Anja.png" alt="Anja">
+            <p id="navn">Anja Agerskov</p>
+        </a>
+
+
         <section id="forside_text">
             <h1>Velkommen</h1>
             <p>Hos Grejs Fodpleje stræber vi efter
@@ -49,7 +56,9 @@
         </section>
         <img id="arrow_down" src="../images/down_arrow.png" alt="pil_ned">
         <div id="mobil_nav">
+            <div id="triangle"></div>
             <ul>
+                <li><a id="nav_loc" href="index.html">Forside</a></li>
                 <li><a href="behandlinger.html">Behandlinger</a></li>
                 <li><a href="produkter.html">Produkter</a></li>
                 <li><a href="galleri.html">Galleri</a></li>
@@ -60,26 +69,26 @@
     <main>
         <div class="main_section" id="neglebehandling">
             <img id="neglebehandling_img" src="../images/negle.png" alt="neglebehandling_billede">
-            <section class="main_section_text">
-                <h2>Neglebehandling</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid amet atque consectetur</p>
-            </section>
+            <a href="behandlinger.html#fodbehandling"><section class="main_section_text">
+                <h2>Fodhandling</h2>
+                <p>Jeg tilbyder både fodbehandling i egen klinik og hjemme hos dig. Jeg går meget op den enkelte kundes behov…</p>
+            </section></a>
         </div>
 
         <div class="main_section" id="fodbehandling">
             <img id="fodbehandling_img" src="../images/fodbehandling.png" alt="fodbehandling_billede">
-            <section class="main_section_text">
-                <h2>Fodhandling</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid amet atque consectetur</p>
-            </section>
+            <a href="behandlinger.html#mobilbehandling"><section class="main_section_text">
+                <h2>Mobil behandling</h2>
+                <p>Hvis du ikke har mulighed for at komme til mig i klinikken, så kommer jeg gerne til dig i stedet. Denne… </p>
+            </section></a>
         </div>
 
         <div class="main_section" id="produkter">
             <img id="produkter_img" src="../images/produkter.png" alt="produkter_billede">
-            <section class="main_section_text">
+            <a href="produkter.html"><section class="main_section_text">
                 <h2>Produkter</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid amet atque consectetur</p>
-            </section>
+                <p>Jeg sælger forskellige cremer og pleje til fødder og negle. Det hele kan selvfølgelig købes hos mig i klinikken…</p>
+            </section></a>
         </div>
     </main>
     <footer>

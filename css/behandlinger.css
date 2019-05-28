@@ -11,6 +11,7 @@ body{
 
 #background_image{
     width: 100%;
+    height: 130px;
 }
 
 
@@ -28,22 +29,43 @@ nav{
     display: none;
 }
 
+#triangle{
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid rgba(69,99,99,0.95);
+    border-left: 15px solid transparent;
+    right: 5%;
+    top: -20px;
+}
+
 #mobil_nav{
     display: none;
     position: absolute;
-    top: 68px;
-    width: 100%;
-    background-color: grey;
+    top: 88px;
+    width: 95%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 5px;
+    background-color: rgba(69,99,99,0.95);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 2;
 }
 
 #mobil_nav li{
     list-style-type: none;
-    line-height: 35px;
+    line-height: 40px;
 }
 
 #mobil_nav a{
-    color: rgba(122,243,246, 0.8);
+    color: white;
     text-decoration: none;
+}
+
+#mobil_nav #nav_loc{
+    color: #FECCCC;
 }
 
 #logo{
@@ -95,16 +117,27 @@ box-shadow: 2px 2px 3px 0px rgba(120,120,120,0.54);
     padding: 10px;
     font-size: 12px;
     hyphens: auto;
+    height: 100px;
+
 
 -webkit-box-shadow: 2px 2px 3px 0px rgba(120,120,120,0.54);
 -moz-box-shadow: 2px 2px 3px 0px rgba(120,120,120,0.54);
 box-shadow: 2px 2px 3px 0px rgba(120,120,120,0.54);
 }
 
+.main_section_text p{
+    max-height: 50px;
+    overflow: hidden;
+}
+
 .main_section h2{
     font-family: 'Dancing Script', cursive;
     margin-bottom: 10px;
     font-size: 22px;
+}
+
+button{
+    position: absolute;
 }
 
 /* -------------- FOOTER -------------- */
@@ -168,6 +201,7 @@ footer p{
     }
 
     #background_image_ipad{
+        display: block;
         width: 100%;
     }
 
@@ -179,6 +213,10 @@ footer p{
         top: 20px;
     }
 
+    #burger_icon{
+        right: 45px;
+    }
+
     #text{
         width: 60%;
         font-size: 17px;
@@ -188,6 +226,9 @@ footer p{
 
     /* -------------- MAIN -------------- */
 
+    #background_image_ipad{
+        height: 200px;
+    }
 
     .main_section img{
         height: 180px;
@@ -219,6 +260,12 @@ footer p{
         position: absolute;
         bottom: 30px;
         font-size: 12px;
+        height: unset;
+        max-height: unset;
+    }
+
+    button{
+        display: none;
     }
 
     /* -------------- FOOTER -------------- */
@@ -267,7 +314,7 @@ footer p{
 
     nav{
         display: block;
-        width: 400px;
+        width: 600px;
         position: absolute;
         top: 30px;
         right: 10%;
